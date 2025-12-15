@@ -1,8 +1,24 @@
 # CYCU GDG on Campus Gemini-CLI+MCP WorkShop
 
+## 本地安裝 Gemini-cli
+
+1. 下載+安裝 Node.JS https://nodejs.org/zh-tw/download
+2. 開啟 terminal，輸入
+
+```
+npm install -g @google/gemini-cli
+```
+
+## GCP 上試用 Gemini-CLI
+
+1. 使用工作坊給的抵免額
+2. 開一個新專案
+3. 右上角，開啟 Cloud terminal
+4. 啟用 Gemini-Cli
+
 ## MCP
 
-`settings.json`
+`~/.gemini/settings.json`
 
 ```json
 {
