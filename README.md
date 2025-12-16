@@ -20,6 +20,43 @@ npm install -g @google/gemini-cli
 
 `~/.gemini/settings.json`
 
+如果你沒有 docker
+
+```json
+{
+  "mcpServers": {
+    "github-remote": {
+        "httpUrl": "https://api.githubcopilot.com/mcp/",
+        "headers": {
+         "Authorization": "Bearer YOUR_GITHUB_ACCESS_TOKEN"
+        }
+    },
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest"
+      ]
+    },
+    "desktop-commander": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@wonderwhy-er/desktop-commander"
+      ]
+    }
+  },
+  "general": {
+    "preferredEditor": "vscode",
+    "previewFeatures": true
+  },
+  "ui": {
+    "theme": "Default"
+  }
+}
+```
+
+如果你有 docker
+
 ```json
 {
   "mcpServers": {
@@ -54,11 +91,6 @@ npm install -g @google/gemini-cli
   "general": {
     "preferredEditor": "vscode",
     "previewFeatures": true
-  },
-  "security": {
-    "auth": {
-      "selectedType": "oauth-personal"
-    }
   },
   "ui": {
     "theme": "Default"
